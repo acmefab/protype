@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BPM-SOFT</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="all,follow">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+	<!-- Fontastic Custom icon font-->
+	<link rel="stylesheet" href="css/fontastic.css">
+	<!-- Google fonts - Poppins -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+	<!-- theme stylesheet-->
+	<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+	<!-- Custom stylesheet - for your changes-->
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/favico.ico">
+	<!-- Tweaks for older IEs-->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+	<div class="page">
+		<!-- Main Navbar-->
+		<header class="header">
+			<nav class="navbar">
+				<!-- Search Box-->
+				<div class="search-box">
+					<button class="dismiss"><i class="icon-close"></i></button>
+					<form id="searchForm" action="#" role="search">
+						<input type="search" placeholder="What are you looking for..." class="form-control">
+					</form>
+				</div>
+				<div class="container-fluid">
+					<div class="navbar-holder d-flex align-items-center justify-content-between">
+						<!-- Navbar Header-->
+						<div class="navbar-header">
+							<!-- Navbar Brand -->
+							<a href="dashboard.html" class="navbar-brand d-none d-sm-inline-block">
+								<div class="brand-text d-none d-lg-inline-block"><span><img src="img/Logo.png">&nbsp;</span><strong>ACME</strong></div>
+								<div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>Logo</strong></div>
+							</a>
+							<!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+						</div>
+						<!-- Navbar Menu -->
+						<ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+							<!-- Search-->
+							<li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+							<!-- Notifications-->
+							<li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red badge-corner">12</span></a>
+								<ul aria-labelledby="notifications" class="dropdown-menu">
+									<li>
+										<a rel="nofollow" href="#" class="dropdown-item">
+											<div class="notification">
+												<div class="notification-content"><i class="fa fa-envelope bg-green"></i>You
+													have 6 new messages </div>
+												<div class="notification-time"><small>4 minutes ago</small></div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a rel="nofollow" href="#" class="dropdown-item">
+											<div class="notification">
+												<div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You
+													have 2 followers</div>
+												<div class="notification-time"><small>4 minutes ago</small></div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a rel="nofollow" href="#" class="dropdown-item">
+											<div class="notification">
+												<div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server
+													Rebooted</div>
+												<div class="notification-time"><small>4 minutes ago</small></div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a rel="nofollow" href="#" class="dropdown-item">
+											<div class="notification">
+												<div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You
+													have 2 followers</div>
+												<div class="notification-time"><small>10 minutes ago</small></div>
+											</div>
+										</a>
+									</li>
+									<li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+											<strong>view all notifications </strong></a></li>
+								</ul>
+							</li>
+							<!-- Logout    -->
+							<li class="nav-item"><a href="index.html" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="page-content d-flex align-items-stretch">
+			<!-- Side Navbar -->
+			<nav class="side-navbar">
+				<!-- Sidebar Header-->
+				<div class="sidebar-header d-flex align-items-center">
+					<div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+					<div class="title">
+						<h1 class="h4">Mark Stephen</h1>
+						<p>Super Admin</p>
+					</div>
+				</div>
+				<!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+				<ul class="list-unstyled">
+					<li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard </a></li>
+					<li><a href="projects.html"> <i class="icon-grid"></i>Projects </a></li>
+					<li><a href="clients.html"> <i class="fa fa-users"></i>Clients </a></li>
+					<li><a href="vendors.html"> <i class="fa fa-barcode"></i>Vendor </a></li>
+					<li><a href="transaction-category.html"> <i class="fa fa-list-alt"></i>Category </a></li>
+					<li><a href="#"> <i class="fa fa-shopping-cart"></i>Purchase Order</a></li>
+					<li><a href="#"> <i class="icon-padnote"></i>Materials </a></li>
+					<li class="active"><a href="report-search.html"> <i class="fa fa-bar-chart"></i>Reports </a></li>
+					<li><a href="#"> <i class="fa fa-gears"></i>Settings </a></li>
+				</ul>
+			</nav>
+			<div class="content-inner">
+				<!-- Page Header
+                <header class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="no-margin-bottom">Lists</h2>
+                    </div>
+                </header>-->
+				<!-- Breadcrumb-->
+				<div class="breadcrumb-holder container-fluid">
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+						<li class="breadcrumb-item"><a href="report-search.html">Reports</a></li>
+						<li class="breadcrumb-item active">Generated Report </li>
+					</ul>
+				</div>
+				<section class="tables">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-header d-flex justify-content-between align-items-center">
+										<h3 class="h4">Report - SRCFinal</h3>
+										<div class="btn-group">
+											<a href="#" class="btn btn-secondary"><i class="fa fa-download"></i> &nbsp; Download</a>&nbsp;
+											<a href="#" class="btn btn-secondary"><i class="fa fa-print"></i> &nbsp; Print</a>
+										</div>
+									</div>
+									<div class="card-body report-doc">
+										<div class="row">
+											<div class="col-12 text-center">
+												<img src="img/doc-header.png">
+											</div>
+											<div class="col-12 text-right">
+												<p>Date: 04 July 2018<br>Ref: Acme/PEB-001</p>
+											</div>
+											<div class="col-12">
+												<address>
+													To,<br>M/S. Dharanithara Spinning Mills Pvt Ltd<br>No.9C/3, Ram Nagar, Kumarasampatty, Salem
+												</address>
+											</div>
+											<div class="col-12"><br></div>
+											<div class="col-12">
+												<p>Dear Sir,</p>
+												<p>Sub: Supply &amp; Erection of Pre Engineering Building Systems-Reg.</p>
+												<br>
+												<p>This refers to proposed PEB for <strong>M/S .DHARANITHARA SPINNING MILLS PVT LTD</strong> We are pleased tosubmit our revised proposal for the above project based on the discussions and information furnished to us. Our offer includes 1) Building features, 2) Physical parameters and 3) Commercial &amp; payment Teams.Building standards and assumptions are given in the Annexure.</p>
+												<p>And also enclosed are proposal drawings depicting the salient features of the Building for your kind perusal and reference</p>
+												<p>Please feel free to contract us for any further clarification and we assure you of Our best attention and service at all times.<br>We look forward to doing business with <strong>M/S .DHARANITHARA SPINNING MILLS PVT LTD</strong></p>
+											</div>
+											<div class="col-12">
+												<br><br>
+												<p>Thanking you<br>For Acme Fab</p>
+											</div>
+											<div class="col-12"><br><br></div>
+											<div class="col-6">
+												<strong>Email:</strong> acmefab@outlook.com<br><strong>Mobile:</strong> +91 96985 11222
+											</div>
+											<div class="col-6 text-right">
+												#17, MTC Building Complex,<br>Mettur Dam – 636 402
+											</div>
+										</div>
+										<br><br>
+										<div class="table-responsive">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>SL.NO</th>
+														<th>Parameter</th>
+														<th>Value</th>
+														<th colspan="2">Remark</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Building with</td>
+														<td>[100’0]30,487MM</td>
+														<td colspan="2">Outer to outer of steel</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>With module</td>
+														<td>Clear span</td>
+														<td colspan="2"></td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Building Length</td>
+														<td>[150’0”]45,731MM</td>
+														<td colspan="2">Outer to outer of steel</td>
+													</tr>
+													<tr>
+														<th scope="row">4</th>
+														<td>Building Height</td>
+														<td>[20’ 0” ] 6000 mm</td>
+														<td colspan="2">Clear Height from FFL</td>
+													</tr>
+													<tr>
+														<th scope="row">5</th>
+														<td>Roof slop</td>
+														<td>1:10</td>
+														<td colspan="2"></td>
+													</tr>
+													<tr>
+														<th scope="row">6</th>
+														<td>Column Base</td>
+														<td>Fixed Base</td>
+														<td colspan="2">To control Deflection</td>
+													</tr>
+													<tr>
+														<th scope="row">7</th>
+														<td>Bay spacing (in mm)</td>
+														<td>[20’ 4” ] 6500 mm</td>
+														<td colspan="2">Center to center of steel</td>
+													</tr>
+													<tr>
+														<th scope="row">8</th>
+														<td>Roof Bracing</td>
+														<td colspan="3">Diagonal PIPE Bracing</td>
+													</tr>
+													<tr>
+														<th scope="row">9</th>
+														<td>Gladding</td>
+														<td colspan="3">Diagonal PIPE Bracing</td>
+													</tr>
+													<tr>
+														<th colspan="5">End Wall</th>
+													</tr>
+													<tr>
+														<th scope="row">1</th>
+														<td>LEW Bay spacing</td>
+														<td>Ridge frame</td>
+														<td colspan="2"></td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>REW Bay spacing</td>
+														<td>Ridge frame</td>
+														<td colspan="2"></td>
+													</tr>
+													<tr>
+														<th colspan="5">Sheeting details</th>
+													</tr>
+													<tr>
+														<th scope="row">1</th>
+														<td>Roof sheeting</td>
+														<td>Fully sheeted</td>
+														<td colspan="2">Roof .47mmCCGL Tata blue scope</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Near site wall</td>
+														<td>15’0”</td>
+														<td colspan="2">Roof .47mmthick CCGL</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Far site wall</td>
+														<td>15’0”</td>
+														<td colspan="2">Roof .47mmthick CCGL</td>
+													</tr>
+													<tr>
+														<th scope="row">4</th>
+														<td>Left end wall</td>
+														<td>21’0”</td>
+														<td colspan="2">Roof .47mmthick CCGL</td>
+													</tr>
+													<tr>
+														<th scope="row">5</th>
+														<td>Right end wall</td>
+														<td>21’0”</td>
+														<td colspan="2">Roof .47mmthick CCGL</td>
+													</tr>
+													<tr>
+														<th colspan="5">Surface Treatment</th>
+													</tr>
+													<tr>
+														<th scope="row">1</th>
+														<td>Primer</td>
+														<td>25 Micron</td>
+														<td colspan="2">Red oxide primer</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>First coat</td>
+														<td>Enamel paint</td>
+														<td colspan="2">Two coated</td>
+													</tr>
+													<tr>
+														<th colspan="5">Rate schedule</th>
+													</tr>
+													<tr>
+														<th>SL.NO</th>
+														<th>Description</th>
+														<th>Sq. feet</th>
+														<th>Rate</th>
+														<th>Amount</th>
+													</tr>
+													<tr>
+														<th scope="row">1</th>
+														<td>Material supply & sheet</td>
+														<td>15000</td>
+														<td>281.00</td>
+														<td class="text-right">4,215,000.00</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>GST 18%</td>
+														<td></td>
+														<td></td>
+														<td class="text-right">758,700.00</td>
+													</tr>
+													<tr>
+														<th scope="row"></th>
+														<td></td>
+														<td><strong>Total amount</strong></td>
+														<td></td>
+														<td class="text-right"><strong>4,973,700.00</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<br><br>
+										<section>
+											<p><strong>Payment terms:</strong></p>
+											<ul>
+												<li>45% Advance with clear purchase order &signed contract,</li>
+												<li>20% Again material supply</li>
+												<li>25% Erection Advance</li>
+												<li>10% Completion entire work</li>
+											</ul>
+										</section>
+										<section>
+											<p><strong>Duration:</strong></p>
+											<p class="ml-4">6 &amp; 8 weeks from the of receipt and acceptance</p>
+											<ul>
+												<li>Signed Contract
+												<li>Signed final Approval Drawings and</li>
+												<li>Advance</li>
+											</ul>
+										</section>
+										<section>
+											<p><strong>Validity:</strong></p>
+											<p class="ml-4">15 days from the date of this proposal unless extended or further Steel price increase whichever is earlier.</p>
+										</section>
+										<section>
+											<p><strong>Terms &amp conditions:</strong></p>
+											<ul>
+												<li>Electricity for Erection work is Client scope.</li>
+												<li>Customer’s responsibility to provide a suitable convenient road for Tailor movements And free space for stacking of material in the site nearer to the Erection point.</li>
+												<li>Loading and unloading is our scope </li>
+												<li>ACME FAB standard paint system (Enamel) for primary system a) oxford Blue b) Suzzlon Green c) smoke grey.</li>
+												<li>The Anchor Bold fixation that has to be done by the client or his civil contractor, Whereas ACME FAB supervise and take the moral response Of the geometry of the bolt locations during the concrete casting.</li>
+											</ul>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Page Footer-->
+				<footer class="main-footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>ACME Feb &copy; 2019-2020</p>
+							</div>
+							<div class="col-sm-6 text-right d-none">
+								<p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+								<!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!-- JavaScript files-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/popper.js/umd/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Main File-->
+	<script src="js/front.js"></script>
+</body>
+
+</html>
